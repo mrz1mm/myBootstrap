@@ -1,0 +1,21 @@
+@import "scss/functions";
+@import "scss/variables";
+
+$new-netflixPrimary: #141414;
+$new-netflixSecondary: #c4c4c4;
+$new-netflixTertiary: #666666;
+$new-netflixQuartary: #333333;
+$new-netflixQuintary: #e1e1e1;
+$new-info: #00a2e8;
+
+$new-theme-colors: (
+  "netflixPrimary": $new-netflixPrimary,
+  "netflixSecondary": $new-netflixSecondary,
+  "netflixTertiary": $new-netflixTertiary,
+  "netflixQuartary": $new-netflixQuartary,
+  "netflixQuintary": $new-netflixQuintary,
+  "info": $new-info,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+@import "scss/bootstrap.scss";
